@@ -23,6 +23,14 @@
     As we can see how much resources we are consuming i.e. Data, files and Big object storage.
     Therefore it is considered as IAAS.
 
+## What is Storage Usage?
+
+    A stats based chart which lets us know how much resources are we allowed and out of that how much has been consumed.
+    Storage Usage gives indication on following things:
+        1. Data Storage
+        2. File Storage
+        3. Big Object Storage
+
 ## Editions
 
     There are several editions of salesforce which are as follows:
@@ -139,3 +147,82 @@
         6. Now click on launch new wizards to create tabs
             follow how  to create tabs if you still not clear on how to create apps.
 
+## Salesforce Fields
+
+    Salesforce fields represents a column inside of a database table.
+    There are two types of salesforce fields:
+        1. Standard Fields
+            Fields which are pre-provided/required for an object to exist. Some of those are as follows:
+            1. Name
+            2. Owner
+            3. Created By
+            4. Last Modified By
+            5. Last Modified Date
+        2. Custom Fields
+            Fields that have been created by user for their ease.
+        3. Fields are used to store required attributes of a record.
+
+        Note: **Dev Edition only allows 500 Fields per object**
+
+### How to create a custom field?
+
+    Steps to create custom fields are as follows:
+        1. Goto Setup > object manager > Select Object > Select Fields and Relationships.
+        2. Click on New button.
+        3. Select Data type.
+        4. Give Field a label, format if you want to, make it required if you want to.
+        5. Set visibility of field
+        6. Hit Save, new field is created.
+
+### Formula Fields
+
+    This is one of the most crucial option available in salesforce.
+    It allows you to create different formulas on the fields and generate output from that formula.
+
+    It has following characteristics:
+        1. It is a read only field i.e. not available for input.
+        2. Result is system generated, no human intermission is required after its creation.
+        3. It will always be recalculated based on the dependent fields.
+        4. It provides may inbuilt functions like Now, Today, DateTimeValue, Text etc.
+
+### Page layout
+
+    Page layout are used for layout customization.
+    These page layouts can be used to make fields required and read only.
+        1. Select any field
+        2. Click on wrench icon
+        3. On the menu you can make it required or read-only.
+    It allows drag and drop functionality for field rearrangement.`
+    There are two types of page layout:
+        4. Edit Page layout
+        5. Detail Page layout
+
+#### Sections
+
+    Sections are part of page layout and it is added to make page layout more organized and categorized.
+    We can use following rearrangements when adding sections:
+        1. Layout
+           1. 1-Column Layout
+           2. 2-Column Layout
+        2. Tab key behavior
+           1. Left to right movement
+           2. Top to Bottom movement
+
+### Custom Page Layout
+
+    Creating out own layout is possible is known as a custom page layout.
+
+    Steps to create a custom layout are as follows:
+        1. Goto Setup > object manager > Select object.
+        2. Click on page layout
+        3. Click new
+        4. if you want to copy an existing layout select it in the existing page layout.
+        5. give it a name/label & save the layout.
+        6. Now rearrange or organize the layout using drag and drop functionality.
+
+### Page layout Assignment
+
+    Steps to assign page layout are as follows
+        1. Gotto setup > object manager > object > page layout.
+        2. Select page layout from the dropdown menu & double click on the profile & save changes
+        3. Layout has been assigned.
