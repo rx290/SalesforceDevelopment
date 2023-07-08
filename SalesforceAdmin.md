@@ -118,3 +118,24 @@
             4. Visual Force Tab (Tabs to display data from visual force)
             5. Lightning Component Tab (it make Lightning component available in mobile and lightning experience)
             6. Lightning Page Component Tab (it is used to app lightning app pages to the salesforce mobile app and lightning experience bars)
+
+### How to create tabs?
+
+    Following are the steps to create tabs:
+        1. Select the object you want to create the tabs on
+        2. Select Style of the tab
+        3. Select Custom Profile if you the tab is not for everyone otherwise select all.
+        4. Select all the apps you can access these tabs from. (tab visibility)
+        5. Click on Done and the tab is created.
+
+### How to create an Object?
+
+    Steps to create an object are as follows:
+        1. Got to setup > object manger > Click New/Create Button > Select Custom Object
+        2. Provide information i.e. name, plural name, has vowels in it or not etc
+        3. It is preferred to keep default settings
+        4. If you want to create reports, activities and want to keep track of the field history then enable these features in optional feature.
+        5. if you want the object to be visible in generic/local or global search then allow search feature from the list.
+        6. Now click on launch new wizards to create tabs
+            follow how  to create tabs if you still not clear on how to create apps.
+
