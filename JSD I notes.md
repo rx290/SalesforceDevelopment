@@ -1,6 +1,6 @@
-# Java Script Developer I notes
 
-    Agenda:
+# Table of contents
+
         1. [Variable, Types and Collection](#Variable, Types and Collection)
            1. What is javascript?
            2. Variables
