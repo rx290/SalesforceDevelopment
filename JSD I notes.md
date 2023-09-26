@@ -1,7 +1,7 @@
 # Java Script Developer I notes
 
     Agenda:
-        1. [Variable, Types and Collection](##Variable, Types and Collection)
+        1. [Variable, Types and Collection](#Variable, Types and Collection)
            1. What is javascript?
            2. Variables
            3. Rules for construction Variable Names
@@ -18,12 +18,12 @@
            14. String Methods
 
 
-        2. [Objects, Functions and Classes](##Objects, Functions and Classes)
-        3. [Browsers and Events] (##Browsers and Events)
-        4. [Debugging and Error Handling](##Debugging and Error Handling)
-        5. [Asynchronous Programming](##Asynchronous Programming)
-        6. [Server Side Java script](##Server Side Java script)
-        7. [Testing](##Testing)
+        2. [Objects, Functions and Classes](#Objects, Functions and Classes)
+        3. [Browsers and Events] (#Browsers and Events)
+        4. [Debugging and Error Handling](#Debugging and Error Handling)
+        5. [Asynchronous Programming](#Asynchronous Programming)
+        6. [Server Side Java script](#Server Side Java script)
+        7. [Testing](#Testing)
 
 ## Variable, Types and Collection
 
