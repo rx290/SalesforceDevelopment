@@ -25,16 +25,16 @@
         6. [Server Side Java script](#Server Side Java script)
         7. [Testing](#Testing)
 
-## Variable, Types and Collection
+## Variable, Types and Collection <a name="Variable, Types and Collection"></a>
 
-## Objects, Functions and Classes
+## Objects, Functions and Classes <a name="Objects, Functions and Classes"></a>
 
-## Browsers and Events
+## Browsers and Events <a name="Browsers and Events"></a>
 
-## Debugging and Error Handling
+## Debugging and Error Handling <a name="Debugging and Error Handling"></a>
 
-## Asynchronous Programming
+## Asynchronous Programming <a name="Asynchronous Programming"></a>
 
-## Server Side Java script
+## Server Side Java script <a name="Server Side Java script"></a>
 
-## Testing
+## Testing <a name="Testing"></a>
