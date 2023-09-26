@@ -1,39 +1,67 @@
 
-# Table of contents
+# Java Script Developer I Notes
 
-1. [Variable, Types and Collection](#Variable, Types and Collection)
-   1. What is javascript?
-   2. Variables
-   3. Rules for construction Variable Names
-   4. Comments in JS
-   5. Data Types in JS
-   6. Type of Operators
-   7. Type Coercion
-   8. Falsy Values in Javascript
-   9. Equality Comparison
-   10. Operators
-   11. Conditional Statements
-   12. var vs const vs let
-   13. String interpolation
-   14. String Methods
+- [Java Script Developer I Notes](#java-script-developer-i-notes)
+  - [Variable, Types and Collection](#variable-types-and-collection)
+    - [What is javascript?](#what-is-javascript)
+    - [Variables](#variables)
+    - [Rules for construction Variable Names](#rules-for-construction-variable-names)
+    - [Comments in JS](#comments-in-js)
+    - [Data Types in JS](#data-types-in-js)
+    - [Type of Operators](#type-of-operators)
+    - [Type Coercion](#type-coercion)
+    - [Falsy Values in Javascript](#falsy-values-in-javascript)
+    - [Equality Comparison](#equality-comparison)
+    - [Operators](#operators)
+    - [Conditional Statements](#conditional-statements)
+    - [var vs const vs let](#var-vs-const-vs-let)
+    - [String interpolation](#string-interpolation)
+    - [String Methods](#string-methods)
+  - [Objects, Functions and Classes](#objects-functions-and-classes)
+  - [Browsers and Events](#browsers-and-events)
+  - [Debugging and Error Handling](#debugging-and-error-handling)
+  - [Asynchronous Programming](#asynchronous-programming)
+  - [Server Side Java script](#server-side-java-script)
+  - [Testing](#testing)
 
-2. [Objects, Functions and Classes](#Objects, Functions and Classes)
-3. [Browsers and Events] (#Browsers and Events)
-4. [Debugging and Error Handling](#Debugging and Error Handling)
-5. [Asynchronous Programming](#Asynchronous Programming)
-6. [Server Side Java script](#Server Side Java script)
-7. [Testing](#Testing)
+## Variable, Types and Collection
 
-## Variable, Types and Collection <a name="Variable, Types and Collection"></a>
+### What is javascript?
 
-## Objects, Functions and Classes <a name="Objects, Functions and Classes"></a>
+### Variables
+  
+### Rules for construction Variable Names
+  
+### Comments in JS
+  
+### Data Types in JS
+  
+### Type of Operators
+  
+### Type Coercion
+  
+### Falsy Values in Javascript
+  
+### Equality Comparison
+  
+### Operators
+  
+### Conditional Statements
+  
+### var vs const vs let
+  
+### String interpolation
+  
+### String Methods
 
-## Browsers and Events <a name="Browsers and Events"></a>
+## Objects, Functions and Classes
 
-## Debugging and Error Handling <a name="Debugging and Error Handling"></a>
+## Browsers and Events
 
-## Asynchronous Programming <a name="Asynchronous Programming"></a>
+## Debugging and Error Handling
 
-## Server Side Java script <a name="Server Side Java script"></a>
+## Asynchronous Programming
 
-## Testing <a name="Testing"></a>
+## Server Side Java script
+
+## Testing
