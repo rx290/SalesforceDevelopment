@@ -63,7 +63,6 @@
           4. KeySet()
           5. Values()
           6. ContainsKey()
-          7. 
     
     6. Operators
          Apex support all the arithmetic and logical operator
@@ -88,5 +87,3 @@
     7. Datatype Conversion
        1. use Integer.valueOf() for integer conversion
        2. use String.valueOf() for String conversion
-       3. 
-  
