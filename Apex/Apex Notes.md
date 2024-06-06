@@ -1,4 +1,4 @@
-# Apex Basics & OOPS
+# Apex Notes
 
 ## DML & Database Classes
 
