@@ -1,5 +1,32 @@
 # Notes for Data Types, Data Structure, Escape Sequence and Data Conversion
 
+## Variable
+
+   Variable is a temporarily available space in the memory allocated by a resource manager to store something when the program is running.
+   Variable has two phases which are as follows:
+      1. Variable Declaration
+      2. Variable Initialization
+
+   When a variable name is written along with its data type that phase is called a variable declaration.
+   When a variable is called within the program and a value is assigned to it, this is called variable Initialization.
+   example:
+   Declaration: String greeting;
+   Initialization: greeting = 'Hello World';
+
+   Using variable: System.debug(greeting);
+
+## Heap
+
+   Heap is a space in memory usually the size of the ram which is designated/allcated to store the data in runtime.
+   For salesforce heap size limit is 6 MB for synchronous transactions and 12 mb for the asynchronous transactions.
+   These is the total amount of memory provided by salesforce and apex transaction cannot exceed these limits, therefore batches are used.
+   Other wise "Heap Size Too Large" error is thrown, devs uses follwoing techniques to avoid these errors:
+
+   1. **Optimizing data structures**: Using efficient data structures, like sets and maps, can help reduce memory usage.
+   2. **Minimizing object creation**: Reducing the number of objects created during a transaction can help conserve memory.
+   3. **Using transient variables**: Declaring variables as transient can help reduce memory usage, as these variables are not stored in the heap.
+   4. **Batching operations**: Breaking up large transactions into smaller batches can help avoid exceeding the heap size limit.
+
 ## Data Types
 
      There are 11 types of Primitive Data types
@@ -34,12 +61,19 @@
 
 ## Collections/Data Structures in Apex
 
-       1. List (Same Type) syntax: List<type of list> List name = new List<type of List>{'data', 'with', 'comma', 'as', 'separators'}, some of the common methods are as follows
+       1. List (An ordered collection of Same Types of elements)
+       syntax: List<type of list> List name = new List<type of List>{'data', 'with', 'comma', 'as', 'separators'};
+       some of the common methods are as follows
           1. Add()
+            syntax: list_name.add(item);
           2. Get()
+            syntax: list_name.get(index);
           3. Size()
+            syntax: list_name.size();
           4. Remove(index)
+            syntax: list_name.remove(index);
           5. Clear()
+            syntax: list_name.clear();
           6. toString()
           7. isEmpty()
           8. sort()
@@ -47,8 +81,14 @@
           10. clone()
           11. contains()
           12. Set()
+      
+      How list Stores data?
+      A list stores the data based on the indices which means we have an indexed memory and each item would get populated on an index based of First come first serve base.
+
        
-       2. Set (unordered Distinct Collection of Same type) syntax: Set<type of Set> Set name = new Set<type of Set>['data', 'with', 'comma', 'as', 'separators'], Sets are implemented as hashtables therefore they are not ordered. some of the common methods are as follows
+       2. Set (unordered Distinct Collection of Same type) 
+       syntax: Set<type of Set> Set name = new Set<type of Set>['data', 'with', 'comma', 'as', 'separators'];
+       Sets are implemented as hashtables therefore they are not ordered. some of the common methods are as follows
           1. Add()
           2. Contains()
           3. Remove(value)
@@ -59,7 +99,9 @@
           8. Equal()
           9. toString()
        
-       3. Map (A key value pair collection like dictionaries in python) syntax: Map<type of key, type of Value> Map name = new Map<type of key, type of Value>(1:'data', 2:'with', 3:'comma', 4:'as', 5:'separators'), some of the common methods are as follows
+       3. Map (A key value pair collection like dictionaries in python) 
+       syntax: Map<type of key, type of Value> Map name = new Map<type of key, type of Value>(1:'data', 2:'with', 3:'comma', 4:'as', 5:'separators');
+       some of the common methods are as follows
           1. Put()
           2. Get()
           3. Remove()

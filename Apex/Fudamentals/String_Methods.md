@@ -46,3 +46,31 @@ Example:
         //replace
         system.debug(str.replace('the',''));
 
+        //split
+        System.debug('Split by space: '+str.split('string_var'))
+
+        //trim
+        String str_var =' sss sss ';
+        System.debug(str.trim(str_var))
+        result would be sss sss without trailing or ending whitespace.
+
+        // ValueOf
+        // Convert any value to string.
+        Integer x = 22;
+        System.debug(valueOf(x))
+
+        //IsBlank()
+        // Returns true or false considering white spaces, i.e. if a string has only white spaces this will return false.
+        System.debug(IsBlank(str_var))
+
+        // IsEmpty()
+        // Returns true or false without considering white space.
+        system.debut(IsEmpty(str_var))
+
+        //IsNumeric()
+        // Returns true if the string has only unicode digits or white spaces.
+
+        //IsAlphanumveric()
+        // Returns true if the string contains both numeric, alphabets and special character.
+
+        
