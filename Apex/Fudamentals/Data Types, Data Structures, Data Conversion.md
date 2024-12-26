@@ -42,6 +42,7 @@
        10. Blob (Binary Data)
        11. ID (Unique Metadata 15 digit (case sensitive) /18 digit (case insensitive))
        12. Constants (if we add final anywhere before the variable initiation and it will become a constant)
+            //Syntax: final decimal pi = 3.14159;
   
 ## Escape Sequence
 
@@ -62,10 +63,13 @@
 ## Collections/Data Structures in Apex
 
        1. List (An ordered collection of Same Types of elements)
-       syntax: List<type of list> List name = new List<type of List>{'data', 'with', 'comma', 'as', 'separators'};
+       syntax: List<type of list> List_name = new List<type of List>{'data', 'with', 'comma', 'as', 'separators'};
        some of the common methods are as follows
           1. Add()
-            syntax: list_name.add(item);
+            // will add it to the last index of the list
+            syntax: list_name.add(value);
+            //will add at the given index and will move other elements on the newer index
+            syntax: list_name.add(index,value);
           2. Get()
             syntax: list_name.get(index);
           3. Size()
@@ -76,38 +80,55 @@
             syntax: list_name.clear();
           6. toString()
           7. isEmpty()
+            syntax: list_name.isEmpty();
           8. sort()
+            syntax: list_name.sort();
           9.  equal()
           10. clone()
+            syntax: Same_data_type new_list_name = list_name.clone();
           11. contains()
           12. Set()
+            syntax: list_name.set(index, value);
       
       How list Stores data?
       A list stores the data based on the indices which means we have an indexed memory and each item would get populated on an index based of First come first serve base.
 
        
-       2. Set (unordered Distinct Collection of Same type) 
-       syntax: Set<type of Set> Set name = new Set<type of Set>['data', 'with', 'comma', 'as', 'separators'];
+       2. Set (an unordered Distinct Collection of Same type of elements) 
+       syntax: Set<type of Set> Set_name = new Set<type of Set>['data', 'with', 'comma', 'as', 'separators'];
        Sets are implemented as hashtables therefore they are not ordered. some of the common methods are as follows
           1. Add()
+            //set doesn't use index so no need for indexes
+            syntax: set_name.add(item);
           2. Contains()
+            syntax: set_name.contains(value);
           3. Remove(value)
+            syntax: set_name.remove(value);
           4. Size()
+            syntax: set_name.size();
           5. isEmpty()
+            syntax: set_name.isEmpty();
           6. Clear()
+            syntax: set_name.clear();
           7. Clone()
           8. Equal()
           9. toString()
        
        3. Map (A key value pair collection like dictionaries in python) 
-       syntax: Map<type of key, type of Value> Map name = new Map<type of key, type of Value>(1:'data', 2:'with', 3:'comma', 4:'as', 5:'separators');
+       syntax: Map<type of key, type of Value> Map_name = new Map<type of key, type of Value>(1:'data', 2:'with', 3:'comma', 4:'as', 5:'separators');
        some of the common methods are as follows
           1. Put()
+            syntax: map_name.put(key,value);
           2. Get()
+            syntax: map_name.get(key);
           3. Remove()
+            syntax: map_name.remove(key);
           4. KeySet()
+            syntax: map_name.keySet();
           5. Values()
+            syntax: map_name.values();
           6. ContainsKey()
+            syntax: map_name.containsKey(key);
 
 ## Operators
 
@@ -119,8 +140,8 @@
          3. Multiplication (*)
          4. Division (/)
          5. Power (**)
-         6. Increment (+=1)
-         7. Decrement (-=1)
+         6. Increment (+=n or x++)
+         7. Decrement (-=n or x--)
 
 ### Logical Operators
 
@@ -134,8 +155,16 @@
          8. less than equal to <=
          9. greater than equal to >=
          10.Ternary Operator (?)
+            //Syntax (hour <12) ? 'Good Morning' : 'Good Afternoon';
 
 ## Datatype Conversion
 
        1. use Integer.valueOf() for integer conversion
        2. use String.valueOf() for String conversion
+
+## Expression
+
+   Any statement, which gives us a new value when executed i.e. evaluates and process itself by returning a value is called an expression.
+   Example:
+         DateTime currentDateTime = DateTime.newInstance(2024,12,27,1,16,0);
+         // The DateTime.newInstance is an expression in this example
