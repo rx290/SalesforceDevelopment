@@ -21,7 +21,6 @@
     Created in 2018, based on new web standard or stack, natively available in your web browser.
     Therefore much faster than the aura components.
 
-
 ### Backend
 
     Salesforce uses Oracle DB as it's backend but it ain't open to get interacted.
