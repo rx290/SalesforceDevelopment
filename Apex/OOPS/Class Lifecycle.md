@@ -1,6 +1,9 @@
-# OOPS in Apex
+# Class Lifecycle
 
-    OOPS stand for Object Oriented Programming.
-    A methodology in computer programming that advices us how to write efficient and readable code.
+    1. Static Initialization Block (if many they will follow the definition pattern)
+    2. Initialization Block (if many they will follow the definition pattern)
+    3. Default or blank Constructor
+    4. Parameterized Constructor
 
-    
+
+    Use a top down approach, top means will be called first and bottom means will be called last.

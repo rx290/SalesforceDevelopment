@@ -22,7 +22,7 @@
     These test classes are there to test all of the functionalities there in the class.
     Salesforce has its own testing framework and it recommends using that.
     So to automate the process we use triggers.
-
+  
 ### User Interface
 
     The UI element of the salesforce is called visualforce page but this only works with the old framework.
