@@ -43,7 +43,14 @@
             }
         }
 
-        you can use mmultiple values by seprating them using a comma.
+        you can use multiple values by separating them using a comma.
+
+        There is another statement called when else, this code block is executed when nothing matches.
+        it comes in the last and looks like this:
+        Syntax:
+            When else {
+                code block
+            }
 
 ## Loops
 
