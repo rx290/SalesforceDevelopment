@@ -91,7 +91,27 @@
 ## Break statement
 
     This is a statement to exit the iteration created by loops before meeting the terminating condition.
+    // syntax: break;
 
 ## Continue Statement
 
     This is a pass statement, i.e. the step on which continue statement is used the iteration will be skipped or stopped at that point and will start the next iteration in a loop.
+    //syntax: continue;
+
+## List Iteration
+
+    This is a type of for loop that is designed to iterate over a list quite easily.
+    The syntax is quite different from a generic for loop.
+    Syntax:
+        for (Integer Loop_Variable : List_Name){
+            code block
+        }
+
+    Example:
+        List<Integer> rollNumbers = new List<Integer>{1101,1324,1325,5355,7444};
+
+        for (integer rollnumber : rollnumbers){
+            system.debug('Student RN: '+rollnumber);
+        }
+
+    
