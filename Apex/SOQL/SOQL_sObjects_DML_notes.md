@@ -137,6 +137,18 @@
                  //Alternate way to undelete records
                 // Database.undelete(accounts);
 
+        6. Upsert: helps you either create a new record or update an existing record in one transaction
+            example:
+                List<customer_C>customerList= new List<customer_C>();
+                customer__c cus = [select id,name,email, description from customer__c where email like'%ortooapps.com%'];
+                cus.description = 'not so cool company, no carrier growth';
+                customerList.add(cus);
+                for(integer i=1;i<=10;i++){
+                    customer_c objcust = new customer__c(name = 'Sample'+i);
+                    customerList.add(objcust);
+                }
+                upsert customerList;
+
 ### Database Methods vs DML Statement
 
     In Database Methods you can control partial record process, but no exception is thrown and a result array is returned.
@@ -182,3 +194,51 @@
 
         insert contactRec;
         
+
+## SOSL VS SOQL
+
+    salesforce provides two search functionalities which are as follows:
+        1. SOSL: Salesforce Object Search Language
+        2. SOQL: Salesforce Object Query Language
+
+    SOSL has the capability of searching a particular string across multiple objects.
+    each SOSL statements is like a list of SObjects where each of this list contians the search results for a particular SObject Type.
+    Result List is always returned in the same order as they were initialized in the SOSL Query.
+    SOSL is a programmatic way of performing a text based search against the search index.
+    It is used when the target object is not known, it relation is not known and when we need to retrieve multiple objects.
+    How SOSL is consumed or called?
+    They can be called from following methods:
+        1. SOAP or REST Calls
+        2. APEX statements
+        3. Visualforce Controllers and getter methods
+        4. Schema Explorer or the Eclipse Toolkit
+
+    Syntax:
+        //it always begins with find keyword
+        Find {Search Query}
+        //Anything in Square brackets is optional
+        [ IN SearchGroup] //Used for field scope when searching, it has multiple values like ALL, NAME, EMAIL, PHONE, SIDEBAR with trailing PostFix of Fields
+        [Returning FieldSpec [[toLabel(fields)] [convertCurrent(***Amount***)][Format()]]] // Only used if org has multi-currency enabled
+        //Format is optional but it helps find clause to apply localized formatting standard and custom number, date, time and currency fields
+        // Returning field specs are extensive information about objects that can be used as filters
+        [With Division Filter]
+        [With Data Category DataCategorySpec]
+        [with snipper(target_length=n)] // limit n specifies maximum number of rows in the text query
+        [with Network nerworkIdSpec]
+        [with priceBookId]
+        [With Metadata]
+        [Limit n]
+
+        Example:
+          List<list<SObjects>> customerList=  [Find 'ABC*'] in NAME Fields returning customer__c(id, name,email,description);
+          system.debug('the result is: ',customerList);
+
+
+    SOQL on the other hand only has the capability to fetch object records from one object only at a time, but it can pull related records.
+    SOQL also provide nesting capabilities to fetch parent or child of the target object.
+    SOQL only searches the org database.
+    It is used when target object is know, target data is known and what operations needs to performed is know.
+    It is also used when we need to filter, sort and aggregate data from within the org.
+
+
+
