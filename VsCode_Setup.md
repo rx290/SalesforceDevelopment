@@ -42,4 +42,3 @@
         2. Search for deploy on save
         3. Enable the checkbox under salesforcedx-vscode-core>push-or-deploy-on-save:Enabled
         4. The settings is now enabled, now if you make any change to any file and hit save icon or press cmd/ctrl + s, salesforce extension will automatically deploy the code for you.
-

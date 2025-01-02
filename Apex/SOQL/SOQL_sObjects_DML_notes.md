@@ -239,6 +239,3 @@
     SOQL only searches the org database.
     It is used when target object is know, target data is known and what operations needs to performed is know.
     It is also used when we need to filter, sort and aggregate data from within the org.
-
-
-
