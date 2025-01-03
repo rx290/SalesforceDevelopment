@@ -1,0 +1,8 @@
+trigger TestTrigger on Case(before insert){
+
+    for(case caseRecord: Trigger.new){
+        if(string.isblank(caseRecord.webSource)){
+            caseRecord.webSource = 'Web';
+        }
+    }
+}
